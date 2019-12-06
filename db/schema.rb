@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191122195636) do
+ActiveRecord::Schema.define(version: 20190519201423) do
 
   create_table "emails", force: :cascade do |t|
     t.string   "email"
@@ -30,12 +30,12 @@ ActiveRecord::Schema.define(version: 20191122195636) do
     t.string   "color"
     t.string   "readtime"
     t.text     "content"
-    t.string   "slug"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
     t.string   "image_credit"
     t.string   "image_bottom_credit"
     t.string   "image_square_credit"
+    t.string   "slug"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
 end

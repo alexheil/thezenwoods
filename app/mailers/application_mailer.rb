@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'Ninth Valley'
+  default from: 'The Zen Woods'
   layout 'mailer'
 end

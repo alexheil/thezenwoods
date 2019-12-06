@@ -1,0 +1,69 @@
+<%= provide(:title, "Edit Blog Post") %>
+
+<div class="mid-text padding-vertical border-bottom center">
+  Edit a blog post
+</div>
+
+<div class="padding-vertical">
+  <%= form_for(@post, url: post_path) do |f| %>
+    <div class="field">
+      <%= f.text_field :username, value: nil, placeholder: "Username", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :keycode, value: nil, placeholder: "Keycode", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :title, placeholder: "Title", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :image, placeholder: "Image", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :image_credit, placeholder: "Image credit", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :image_bottom, placeholder: "Image bottom", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :image_bottom_credit, placeholder: "Image bottom credit", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :image_square, placeholder: "Image square", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :image_square_credit, placeholder: "Image square credit", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :tagline, placeholder: "Tagline", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :readtime, placeholder: "Readtime", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :element, placeholder: "Element", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :color, placeholder: "Color", class: "text-field" %>
+    </div>
+
+    <div class="field">
+      <%= f.text_area :content, placeholder: "Content", class: "text-area" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Update blog post", class: "submit-button" %>
+    </div>
+  <% end %>
+</div>

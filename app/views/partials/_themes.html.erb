@@ -1,0 +1,37 @@
+<% if @post.present? %>
+  <meta name="theme-color" content="<%= @post.color %>" />
+  <style>
+    ::selection {
+      background: #<%= @post.color %>;
+    }
+    a {
+      color: #<%= @post.color %>;
+    }
+    .product-title-background {
+      background: #<%= @post.color %>;
+    }
+    .element-background {
+      background: #<%= @post.color %>;
+    }
+    .more-button {
+      background: #<%= @post.color %>;
+      border: 2px solid #<%= @post.color %>;
+    }
+    .more-button:hover {
+      color: #<%= @post.color %>;
+    }
+    .search-button {
+      background: #<%= @post.color %>;
+      border: 2px solid #<%= @post.color %>;
+    }
+    .search-button:hover {
+      color: #<%= @post.color %>;
+    }
+    .search-field {
+      border: 2px solid #<%= @post.color %>;
+    }
+    .full-footer-container {
+      background: #<%= @post.color %>;
+    }
+  </style>
+<% end %>

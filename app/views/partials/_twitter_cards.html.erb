@@ -1,0 +1,15 @@
+<% if content_for?(:blog_og_header) %>
+  <%= yield(:blog_og_header) %>
+<% else %>
+  <meta property="og:url" content="https://www.ninthvalley.com" />
+  <meta property="og:title" content="Ninth Valley" />
+  <meta property="og:description" content="Clean air to breathe. Pure water to drink. Eternal Sun to see. Healthy Earth to live." />
+  <meta property="og:image" content="https://i.imgur.com/fRcWyIZ.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ninth Valley" />
+  <meta name="twitter:description" content="Clean air to breathe. Pure water to drink. Eternal Sun to see. Healthy Earth to live." />
+  <meta name="twitter:image" content="https://i.imgur.com/fRcWyIZ.jpg" />
+  <meta name="twitter:url" content="https://www.ninthvalley.com" />
+  <meta name="twitter:site" content="@ninthvalley" />
+  <meta name="twitter:creator" content="@ninthvalley" />
+<% end %>

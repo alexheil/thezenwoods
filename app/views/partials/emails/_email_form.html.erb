@@ -1,0 +1,11 @@
+<div class="padding-bottom-mini">
+  Change is easy. Enter your email to find out how. Don't worry! We won't spam you (and it's FREE!)
+</div>
+<%= form_for(@email, url: emails_path, remote: true) do |f| %>
+  <div class="home-column">
+    <div class="wrapper flex">
+      <%= f.text_field :email, class: "home-search-field" %>
+      <%= f.submit "Sign up!", data: { disable_with: 'SIGNING UP...' }, class: "home-search-button" %>
+    </div>
+  </div>
+<% end %>

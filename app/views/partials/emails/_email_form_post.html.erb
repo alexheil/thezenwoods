@@ -1,0 +1,6 @@
+<%= form_for(@email, url: emails_path, remote: true) do |f| %>
+  <div class="wrapper flex">
+    <%= f.text_field :email, placeholder: "Your email goes here =)", class: "search-field" %>
+    <%= f.submit "Sign up!", data: { disable_with: 'SIGNING UP...' }, class: "search-button" %>
+  </div>
+<% end %>
